@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-const HelloWorld = memo(props => {
+const HelloWorld = memo(_ => {
     return <div>hellow world</div>
 })
 
