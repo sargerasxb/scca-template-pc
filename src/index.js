@@ -14,14 +14,14 @@ const HelloWorld = lazy(() => import("@/views/hello-world/HelloWorld"));
 
 const render = () => {
   ReactDOM.render(
-  <HashRouter>
-  <Suspense fallback={<div></div>}>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/sign" component={HelloWorld} />
-    </Switch>
-  </Suspense>
-  </HashRouter>,
+    <HashRouter>
+      <Suspense fallback={<div></div>}>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route exact path="/sign" component={HelloWorld} />
+        </Switch>
+      </Suspense>
+    </HashRouter>,
     document.getElementById("root")
   );
 };

@@ -1,7 +1,7 @@
-import { memo } from 'react';
+import { memo } from "react";
 
-const HelloWorld = memo(_ => {
-    return <div>hellow world</div>
-})
+const HelloWorld = memo((_) => {
+  return <div>hellow world</div>;
+});
 
 export default HelloWorld;
