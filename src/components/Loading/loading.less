@@ -1,0 +1,29 @@
+.r-loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #f3f3f3;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .add-transition();
+
+  &.leave {
+    opacity: 0;
+  }
+
+  .loading-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: -18%;
+  }
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    padding-top: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+.border-1px(@position: bottom, @color: #d8d8d8, @height: 1px, @width: 100%) {
+  position: relative;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    @{position}: 0;
+    left: 0;
+    width: @width;
+    height: @height;
+    background-color: @color;
+    transform: scaleY(0.5);
+  }
+}
+
+.add-transition(@type: all, @duration: 0.3s, @timingfunc: ease-in-out) {
+  transition: @type @duration @timingfunc;
+}
