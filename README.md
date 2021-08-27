@@ -1,2 +1,2 @@
-# react-template
-react template
+# scca-pc
+scca-pc 模板
